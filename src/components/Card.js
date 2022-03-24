@@ -1,16 +1,16 @@
-export default function Card({price, talle, title}) {
+import React from "react";
+import ItemCount from "./ItemCount/ItemCount";
 
-    console.log("Precio: ", price)
-    console.log("Talla: ", talle)
-    console.log("Titulo: ", title)
-
+function Card({data}) {
+    const {title, price, talle, stock} = data;
     return(
         <div className="card-item">
             <h2>{title}</h2>
             <p>Precio : $ {price}</p>
             <p>Talla : {talle}</p>
-            <button> Comprar </button>
+            <ItemCount stock={stock} initial={1}/>
         </div>
     )
 }
 
+export default Card;

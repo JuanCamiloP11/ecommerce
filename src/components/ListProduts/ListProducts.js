@@ -1,18 +1,18 @@
+import React from "react";
 import Card from "../Card";
 
 const ListProducts = ({children}) => {
+    let dataProduct = {
+        title: 'Zapatos 1',
+        talle: '11',
+        price: 200,
+        stock: 10
+    }
     return(
-        <div className="container-cards">
-            <h2> {children} </h2>
-
-            <Card title='Zapatos 1' talle='11' price={200}/>
-            <Card title='Zapatos 2' talle='9' price={170}/>
-            <Card title='Zapatos 3' talle='7' price={140}/>
-            <Card title='Zapatos 4' talle='10' price={190}/>
-            <Card title='Zapatos 5' talle='6' price={130}/>
-            <Card title='Zapatos 6' talle='12' price={210}/>
+        <div>
+            <h2>{children}</h2>
+            <Card data ={dataProduct}/>
         </div>
     )
 }
-
 export default ListProducts;

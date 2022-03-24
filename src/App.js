@@ -1,6 +1,8 @@
 import './App.css';
 import NavBar from './components/NavBar'
-import ListProducts from './components/ListProduts/ListProducts';
+import ItemListContainer from './components/ItemListContainer';
+import Categorías from './components/Select/Categorias';
+
 
 
 function App() {
@@ -8,9 +10,8 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <ListProducts>
-        <p className='parrafo'>Nuestros Productos</p>
-      </ListProducts>
+      <Categorías/>
+      <ItemListContainer />
       
     </div>
   );
