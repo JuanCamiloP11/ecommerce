@@ -5,7 +5,7 @@ class CartWidget extends Component {
   render() {
     return (
       <div>
-        <BsFillCartFill style={{color: 'red', fontSize: '50px'}} />
+        <BsFillCartFill style={{color: '', fontSize: '50px'}} />
         {/* <p></p> */}
       </div>
       
