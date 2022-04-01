@@ -1,19 +1,20 @@
 import './App.css';
+import React from 'react';
 import NavBar from './components/NavBar'
 import ItemListContainer from './components/ItemListContainer';
-import Categorías from './components/Select/Categorias';
+import Hero from './components/Hero/Hero';
+import ItemDetailContainer from './components/Item/ItemDetailContainer';
 
 
 
-function App() {
-
+export default function App() {
   return (
-    <div className="App">
+    <>
       <NavBar />
-      <ItemListContainer/>
-      
-    </div>
+      <Hero title="JK Shoes" />
+      <ItemListContainer />
+
+      <ItemDetailContainer id={3} />
+    </>
   );
 }
-
-export default App;

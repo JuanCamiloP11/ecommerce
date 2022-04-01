@@ -3,21 +3,22 @@ import ItemCount from '../ItemCount/ItemCount';
 import '../Item/Item.css'
 
 
-const Item = ({ name, thumbnail, price, id, stock }) => {
+const Item = (item) => {
   const onAdd = (qty) => {
-    alert(`Has agregado ${qty} productos correctamente.`);
+    alert(`Has agregado ${qty} zapatos correctamente`);
   };
 
   return (
     <article className="product-card">
-      <img className="product-card__image" src={thumbnail} alt="" />
+      <img className="product-card__image" src={item.thumbnail} alt="" />
 
-      <h3 className="product-card__name">{name}</h3>
-      <span className="product-card__name">${price}</span>
+      <h3 className="product-card__name">{item.name}</h3>
 
-      <ItemCount stock={stock} onAdd={onAdd} initial={1} />
+      <span className="product-card__name">${item.price}</span>
+
+      <ItemCount stock={item.stock} onAdd={onAdd} initial={1} />
     </article>
   );
-}
+};
 
 export default Item

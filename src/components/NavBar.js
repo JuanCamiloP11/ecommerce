@@ -1,6 +1,7 @@
-import Button from '@mui/material/Button';
+import '../components/NavBar.css'
 import React from "react";
 import CartWidget from './CartWidget/CartWidget';
+
 
 
 function NavBar () {
@@ -12,12 +13,24 @@ function NavBar () {
                     className="img-header"
                 />
             </div>
-        <ul className='navbar'>
-          <li><Button color="error" variant="contained">Inicio</Button></li>
-          <li><Button color="error" variant="contained">Productos</Button></li>
-          <li><Button color="error" variant="contained">Nosotros</Button></li>
-          <li><Button color="error" variant="contained">Contacto</Button></li>
-        </ul>
+            <nav>
+          <ul className="nav-container">
+            <li>
+              <a href="/">Inicio</a>
+            </li>
+            <li className="products-item">
+              <a href="/">
+                Productos <span className="arrow"></span>
+              </a>
+            </li>
+            <li>
+              <a href="/">Nosotros</a>
+            </li>
+            <li>
+              <a href="/">Contacto</a>
+            </li>
+          </ul>
+        </nav>
         <CartWidget />
       </header> 
     )

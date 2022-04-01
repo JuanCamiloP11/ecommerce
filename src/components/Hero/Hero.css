@@ -1,0 +1,70 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-position: 67%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .hero-slide-1 {
+    background-image: url('https://img.freepik.com/foto-gratis/primer-plano-zapatos-mientras-ejecuta_53876-138132.jpg?t=st=1648765223~exp=1648765823~hmac=ec3c8ad358d2bfba5ca57895762741d8b2612b41c9f7df3d1494859122958fb1&w=1380');
+  }
+  
+  .hero-container {
+    display: grid;
+    grid-template: 1fr 2fr 1fr / 0.5fr 2fr 0.5fr;
+    height: 100%;
+  }
+  
+  .hero-container__text-box {
+    grid-column: 2;
+    grid-row: 1;
+    color: red;
+    text-align: center;
+    align-self: center;
+  }
+  
+  .hero-container__text-box h1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    padding-left: 375px;
+  }
+  
+  .hero-container__text-box h2 {
+    font-size: 1.9rem;
+    font-weight: 300;
+    margin: 30px auto;
+    max-width: 360px;
+    padding-left: 375px;
+  }
+
+
+  @media only screen and (min-width: 800px) {
+    .hero-container {
+      display: grid;
+      grid-template: 1fr 2fr 1fr / 1fr 2fr 1fr;
+      height: 100%;
+    }
+  
+    .hero-container__text-box h1 {
+      font-size: 3.8rem;
+      font-weight: 800;
+      margin-top: 130px;
+    }
+  
+    .hero-container__text-box p {
+      font-size: 1.2rem;
+      font-weight: s;
+      max-width: 420px;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .hero {
+      background-position: center;
+    }
+  
+    .hero-container__text-box h1 {
+      font-size: 4rem;
+    }
+  }
+  
