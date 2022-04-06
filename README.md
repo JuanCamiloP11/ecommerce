@@ -1,3 +1,11 @@
+Proyecto final React JS
+
+El proyecto final que estoy desarrollando en este curso es un pequeño ecommerce de zapatos, tiene una barra de navegación simple y un estilo propio de la marca. No contiene mucho contenido, solo la información necesaria de cada producto.
+
+
+------------------------------------------------------------------
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
