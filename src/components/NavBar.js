@@ -1,6 +1,7 @@
 import '../components/NavBar.css'
 import React from "react";
 import CartWidget from './CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
 
 
 
@@ -16,18 +17,16 @@ function NavBar () {
             <nav>
           <ul className="nav-container">
             <li>
-              <a href="/">Inicio</a>
+              <Link to={'/'}>Inicio</Link>
             </li>
             <li className="products-item">
-              <a href="/">
-                Productos <span className="arrow"></span>
-              </a>
+            <Link to={'/productos'}>Productos</Link>
             </li>
             <li>
-              <a href="/">Nosotros</a>
+            <Link to={'/nosotros'}>Nosotros</Link>
             </li>
             <li>
-              <a href="/">Contacto</a>
+            <Link to={'/contacto'}>Contacto</Link>
             </li>
           </ul>
         </nav>

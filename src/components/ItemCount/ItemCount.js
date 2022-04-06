@@ -38,6 +38,7 @@ const ItemCount = ({ initial, stock, onAdd }) => {
       >
         Añadir
       </button>
+      <a href="http://localhost:3000/catalogo/1" class="btn btn-success">Detalles</a>
     </div>
   );
 };
